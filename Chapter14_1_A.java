@@ -48,7 +48,7 @@ public class Chapter14_1_A extends Application {
         c2.setFill(Color.HOTPINK);
 
         c3.setStroke(myColor1);
-        c3.setStroke(myColor2);
+        c3.setFill(myColor2);
 
         c4.setStroke(myColor3);
         c4.setFill(myColor4);
