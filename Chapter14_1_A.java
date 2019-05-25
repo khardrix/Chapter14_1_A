@@ -24,14 +24,16 @@ public class Chapter14_1_A extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage){
+    public void start(Stage primaryStage) {
 
-        Color myColor1 = new Color(175, 130, 75, 1);
-        Color myColor2 = new Color(75, 230, 175, 1);
-        Color myColor3 = new Color(255, 0, 255, 1);
-        Color myColor4 = new Color(255, 255, 75, 1);
-        Color myColor5 = new Color(100, 255, 100, 1);
-        Color myColor6 = new Color(255, 180, 0, 1);
+        Pane pane = new Pane();
+
+        Color myColor1 = new Color(200, 120, 255, 1.0);
+        Color myColor2 = new Color(75, 230, 175, 1.0);
+        Color myColor3 = new Color(255, 0, 255, 1.0);
+        Color myColor4 = new Color(255, 255, 75, 1.0);
+        Color myColor5 = new Color(100, 255, 100, 1.0);
+        Color myColor6 = new Color(255, 180, 0, 1.0);
 
         Circle c1 = new Circle(50, 50, 30);
         Circle c2 = new Circle(150, 150, 80);
@@ -42,7 +44,7 @@ public class Chapter14_1_A extends Application {
         c1.setStroke(Color.GREEN);
         c1.setFill(Color.CYAN);
 
-        c2.setStroke(Color.BLANCHEDALMOND);
+        c2.setStroke(Color.ORANGE);
         c2.setFill(Color.HOTPINK);
 
         c3.setStroke(myColor1);
@@ -54,10 +56,11 @@ public class Chapter14_1_A extends Application {
         c5.setStroke(myColor5);
         c5.setFill(myColor6);
 
-        Pane pane = new Pane();
-        Scene scene = new Scene(pane, 500, 500);
+
         pane.getChildren().addAll(c1, c2, c3, c4, c5);
+        Scene scene = new Scene(pane, 500, 500);
         primaryStage.setTitle("Chapter 14, Problem 1, Part A");
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }
