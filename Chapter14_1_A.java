@@ -28,12 +28,12 @@ public class Chapter14_1_A extends Application {
 
         Pane pane = new Pane();
 
-        Color myColor1 = new Color(200, 120, 255, 1.0);
-        Color myColor2 = new Color(75, 230, 175, 1.0);
-        Color myColor3 = new Color(255, 0, 255, 1.0);
-        Color myColor4 = new Color(255, 255, 75, 1.0);
-        Color myColor5 = new Color(100, 255, 100, 1.0);
-        Color myColor6 = new Color(255, 180, 0, 1.0);
+        Color myColor1 = Color.rgb(200, 120, 255, 1.0);
+        Color myColor2 = Color.rgb(75, 230, 175, 1.0);
+        Color myColor3 = Color.rgb(255, 0, 255, 1.0);
+        Color myColor4 = Color.rgb(255, 255, 75, 1.0);
+        Color myColor5 = Color.rgb(100, 255, 100, 1.0);
+        Color myColor6 = Color.rgb(255, 180, 0, 1.0);
 
         Circle c1 = new Circle(50, 50, 30);
         Circle c2 = new Circle(150, 150, 80);
